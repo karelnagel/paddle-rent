@@ -1,0 +1,11 @@
+{
+  "name": "paddle-rent",
+  "version": "1.0.0",
+  "repository": "https://github.com/karelnagel/paddle-rent.git",
+  "author": "Karel Nagel <nagelkarel@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ]
+}
