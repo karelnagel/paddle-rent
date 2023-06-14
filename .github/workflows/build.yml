@@ -68,8 +68,8 @@ jobs:
         run: sudo apt install gcc-arm-linux-gnueabihf
       - name: Enable armhf in the package manager
         run: sudo dpkg --add-architecture armhf
-      - name: Update the new package info
-        run: sudo apt-get update && sudo apt-get upgrade -y
+      # - name: Update the new package info
+      #   run: sudo apt-get update && sudo apt-get upgrade -y
       - name: Install webkitgtk
         run: sudo apt install libwebkit2gtk-4.0-dev:armhf
       - name: Tell where pkgconfig can find the libs for that arch
