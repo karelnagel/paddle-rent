@@ -14,4 +14,6 @@ WORKDIR /usr/src/app
 
 COPY . .
 
-RUN yarn && yarn tauri build --bundles deb,appimage --target armv7-unknown-linux-gnueabihf
+RUN rustup target add armv7-unknown-linux-gnueabihf
+ENV RUST_BACKTRACE=1
+RUN cd packages/tauri-app && yarn && yarn tauri build --bundles deb,appimage --target armv7-unknown-linux-gnueabihf

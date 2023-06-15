@@ -3,7 +3,7 @@
 
 #[tauri::command]
 fn hello() -> String {
-    "Hello World!".to_string()
+    "Hello Worldd!".to_string()
 }
 fn main() {
     tauri::Builder::default()
